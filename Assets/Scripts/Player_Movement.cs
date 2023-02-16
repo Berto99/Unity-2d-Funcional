@@ -103,6 +103,7 @@ public class Player_Movement : MonoBehaviour
     
     private IEnumerator Dash()
     {
+        animator.SetTrigger("Dash_new");
         canDash = false;
         isDashing = true;
         float originalGravity = rb.gravityScale;

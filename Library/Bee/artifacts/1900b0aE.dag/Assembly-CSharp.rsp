@@ -374,7 +374,6 @@
 "Assets/Scripts/bringerChaos.cs"
 "Assets/Scripts/CameraScript.cs"
 "Assets/Scripts/GameController.cs"
-"Assets/Scripts/Player_Attack.cs"
 "Assets/Scripts/Player_Movement.cs"
 -langversion:9.0
 
