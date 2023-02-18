@@ -15,7 +15,7 @@ public class BarradeVida : MonoBehaviour
 
     public void cambiarVidaMaxina(float vidaMaxima)
     {
-        slider.maxValue= vidaMaxima;
+        slider.maxValue = vidaMaxima;
     }
 
     public void cambiarVidaActual(float cantidadVida)

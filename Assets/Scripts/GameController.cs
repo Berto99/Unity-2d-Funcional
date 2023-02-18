@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    
     private Vector2 startPos;
+    
     private void Start()
     {
         startPos = transform.position;

@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class CombateJugador : MonoBehaviour
 {
+    private Animator animator;
+    
+    private Vector2 startPos;
+    [Header("Vida")]
     [SerializeField] private float vida;
-    [SerializeField] private float maximaVida;
-    [SerializeField] private BarradeVida barradeVida;
+    [SerializeField] private BarradeVida barraDeVida;
+
     // Start is called before the first frame update
     void Start()
     {
-        vida = maximaVida;
-        barradeVida.inicializarBarraDeVida(vida);
+        startPos = transform.position;
+        animator = GetComponent<Animator>();
+        barraDeVida.inicializarBarraDeVida(vida);
     }
 
     public void tomarDano(float dano)
     {
         vida -= dano;
-        barradeVida.cambiarVidaActual(vida);
+        barraDeVida.cambiarVidaActual(vida);
         if (vida<=0)
         {
-            Destroy(gameObject);
+            animator.SetTrigger("Muerte");
         }
 
     }
@@ -28,5 +33,16 @@ public class CombateJugador : MonoBehaviour
     void Update()
     {
         
+    }
+    void Die()
+    {
+        Respawn();
+        vida = 6;
+        barraDeVida.cambiarVidaActual(vida);
+    }
+
+    void Respawn()
+    {
+        transform.position = startPos;
     }
 }

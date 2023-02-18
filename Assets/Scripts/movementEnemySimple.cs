@@ -15,15 +15,6 @@ public class movementEnemySimple : MonoBehaviour
     public Vector3 v3;
 
 
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -31,12 +22,12 @@ public class movementEnemySimple : MonoBehaviour
         if (right)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+
         }
         else
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+
         }
         if (Physics2D.Raycast(transform.position, transform.right, distancia, layerM))
         {
