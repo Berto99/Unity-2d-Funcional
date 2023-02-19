@@ -586,7 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   jugador: {fileID: 1844014198}
-  vida: 20
+  vida: 10
   barraDeVida: {fileID: 401144223}
   controladorAtaque: {fileID: 2062356433}
   radioAtaque: 0.2
@@ -969,7 +969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
   jugador: {fileID: 1844014198}
-  vida: 20
+  vida: 10
   barraDeVida: {fileID: 401144223}
   controladorAtaque: {fileID: 1287097796}
   radioAtaque: 0.2
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   controladorGolpe: {fileID: 1427989084}
   radioGolpe: 0.1
   dano: 2
-  tiempoEntreAtaque: 0.5
+  tiempoEntreAtaque: 1
   tiempoSiguienteAtaque: 0
 --- !u!1 &2062356432
 GameObject:
@@ -1256,6 +1256,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2039418459081638839, guid: 7a776a86d9ba98a478520d7ebc402687, type: 3}
+      propertyPath: vida
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039418459081638839, guid: 7a776a86d9ba98a478520d7ebc402687, type: 3}
       propertyPath: jugador
       value: 
       objectReference: {fileID: 1844014198}
@@ -1266,6 +1270,10 @@ PrefabInstance:
     - target: {fileID: 2039418459081638847, guid: 7a776a86d9ba98a478520d7ebc402687, type: 3}
       propertyPath: m_Name
       value: Mago
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039418459081638847, guid: 7a776a86d9ba98a478520d7ebc402687, type: 3}
+      propertyPath: m_TagString
+      value: mago
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a776a86d9ba98a478520d7ebc402687, type: 3}

@@ -41,6 +41,11 @@ public class ataquePlayer : MonoBehaviour
             if (colision.CompareTag("enemigo"))
             {
                 colision.transform.GetComponent<Boss>().tomarDano(dano);
+                
+            }
+            else if (colision.CompareTag("mago"))
+            {
+                colision.transform.GetComponent<Mago>().tomarDano(dano);
             }
         }
     }
