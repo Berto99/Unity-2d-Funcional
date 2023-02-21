@@ -7,10 +7,12 @@ public class GameController : MonoBehaviour
 {
     
     private Vector2 startPos;
+    [SerializeField] BarradeVida vida;
     
     private void Start()
     {
         startPos = transform.position;
+        vida = GetComponent<BarradeVida>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)

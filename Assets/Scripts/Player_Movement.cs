@@ -8,7 +8,7 @@ public class Player_Movement : MonoBehaviour
     //Variables
     private float horizontal;
     private float speed = 2f;
-    private float jumpingPower = 6f;
+    [SerializeField] private float jumpingPower = 4f;
     private bool isFacingRight = true;
     private bool doubleJump;
     
